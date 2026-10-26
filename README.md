@@ -1,5 +1,7 @@
 # decimal
 
+[![Go Reference](https://pkg.go.dev/badge/github.com/jankremlacek/decimal.svg)](https://pkg.go.dev/github.com/jankremlacek/decimal)
+
 A fixed-point decimal for Go, built for financial values and as a
 mostly drop-in replacement for [shopspring/decimal](https://github.com/shopspring/decimal).
 
