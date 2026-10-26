@@ -1,0 +1,24 @@
+version: 2
+
+updates:
+  # Test-only modules: shopspring/decimal (the parity oracle) and go-cmp.
+  - package-ecosystem: gomod
+    directory: /
+    schedule:
+      interval: monthly
+    commit-message:
+      prefix: chore
+      include: scope
+    groups:
+      gomod:
+        patterns: [ "*" ]
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+    commit-message:
+      prefix: ci
+    groups:
+      actions:
+        patterns: [ "*" ]
